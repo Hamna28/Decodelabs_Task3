@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flora | Luxury Scented Candles</title>
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Montserrat:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="announcement-bar">
+    <p>Complimentary shipping on orders over $75</p>
+    <button class="theme-toggle-btn js-theme-toggle" aria-label="Toggle Theme">
+      <span class="theme-icon js-theme-icon">🌙</span>
+      <span class="theme-text js-theme-text">Dark Mode</span>
+    </button>
+  </div>
+
+  <header class="header-unit">
+    <nav class="nav-container">
+      <a href="#home" class="brand-logo">
+        <img src="images/logo.png"
+          alt="Flora Logo" class="logo-img">
+        <span>FLORA</span>
+      </a>
+
+      <ul class="nav-links js-nav-links">
+        <li><a href="#home" class="nav-item active js-nav-item">Home</a></li>
+        <li><a href="#collection" class="nav-item js-nav-item">Collection</a></li>
+        <li><a href="#story" class="nav-item js-nav-item">Our Story</a></li>
+        <li><a href="#contact" class="nav-item js-nav-item">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="cart-btn js-cart-trigger" aria-label="View Cart">
+          <span>Bag</span>
+          <span class="cart-count js-cart-count">0</span>
+        </button>
+        <button class="mobile-toggle js-mobile-toggle" aria-label="Toggle Menu">
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main-content">
+
+    <section id="home" class="page-view active js-page-view">
+      <div class="hero-section">
+        <div class="hero-content">
+          <span class="hero-subtitle">Hand-Poured Botanical Candles</span>
+          <h1 class="hero-title">Illuminate Your Atmosphere</h1>
+          <p class="hero-description">Sustainably crafted soy wax candles infused with natural essential oils to bring
+            serenity to your living spaces.</p>
+          <a href="#collection" class="btn btn-primary js-nav-item">Explore Collection</a>
+        </div>
+        <div class="hero-image-wrap">
+          <img src="images/hero.webp" alt="Botanical Candle Sanctuary" class="hero-img">
+        </div>
+      </div>
+    </section>
+
+    <section id="collection" class="page-view js-page-view">
+      <div class="section-container">
+        <div class="section-header">
+          <h2>Curated Fragrance Collection</h2>
+          <p>Filter through our handcrafted signature scents</p>
+        </div>
+
+        <div class="filter-controls">
+          <button class="filter-btn active js-filter-btn" data-category="all">All Scents</button>
+          <button class="filter-btn js-filter-btn" data-category="floral">Floral</button>
+          <button class="filter-btn js-filter-btn" data-category="woody">Woody</button>
+          <button class="filter-btn js-filter-btn" data-category="fresh">Fresh</button>
+        </div>
+
+        <div class="product-grid js-product-grid"></div>
+      </div>
+    </section>
+
+    <section id="story" class="page-view js-page-view">
+      <div class="section-container story-layout">
+        <div class="story-image">
+          <img src="images/about.avif" alt="Artisan pouring candle wax" class="story-img">
+        </div>
+        <div class="story-text">
+          <span class="hero-subtitle">Craftsmanship & Sustainability</span>
+          <h2>Clean Burning, Thoughtfully Made</h2>
+          <p>At Flora, every candle is hand-poured in small batches using 100% natural soy wax, lead-free cotton wicks,
+            and pure botanical extracts. We believe luxury should never come at the expense of your health or the
+            planet.</p>
+
+          <div class="accordion js-accordion">
+            <div class="accordion-item">
+              <button class="accordion-header js-accordion-header">
+                <span>100% Eco-Friendly Soy Wax</span>
+                <span class="icon">+</span>
+              </button>
+              <div class="accordion-content">
+                <p>Our soy wax is derived from American farm-grown soybeans, burning up to 50% cleaner and longer than
+                  paraffin wax.</p>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <button class="accordion-header js-accordion-header">
+                <span>Phthalate-Free Essential Oils</span>
+                <span class="icon">+</span>
+              </button>
+              <div class="accordion-content">
+                <p>We blend fine fragrance oils with natural essential oils, ensuring zero toxic fumes or synthetic
+                  additives.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="page-view js-page-view">
+      <div class="section-container contact-layout">
+        <div class="section-header">
+          <h2>Get in Touch</h2>
+          <p>Have questions about custom orders or bulk inquiries?</p>
+        </div>
+
+        <form class="contact-form js-contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" class="form-input js-input" required>
+            <span class="error-msg js-error-name"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" class="form-input js-input" required>
+            <span class="error-msg js-error-email"></span>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" class="form-input js-input" required></textarea>
+            <span class="error-msg js-error-message"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary js-submit-btn">Send Message</button>
+          <div class="form-status js-form-status"></div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <div class="cart-drawer-overlay js-cart-overlay"></div>
+  <aside class="cart-drawer js-cart-drawer">
+    <div class="cart-header">
+      <h3>Your Shopping Bag</h3>
+      <button class="cart-close js-cart-close">&times;</button>
+    </div>
+    <div class="cart-items js-cart-items">
+      <p class="empty-cart-msg">Your bag is currently empty.</p>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total:</span>
+        <span class="total-amount js-cart-total">$0.00</span>
+      </div>
+      <button class="btn btn-primary btn-block js-checkout-btn" disabled>Checkout</button>
+    </div>
+  </aside>
+
+  <div class="toast-notification js-toast">
+    <span class="toast-message js-toast-msg">Item added to bag!</span>
+  </div>
+
+  <footer class="footer-section">
+    <p>&copy; 2026 FLORA Botanical Candles. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
