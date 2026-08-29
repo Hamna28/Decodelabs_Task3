@@ -59,6 +59,6 @@ flora-candles/
 
 ## 📄 License & Copyright
 
-© 2026. All rights reserved. 
+© 2026. Hamna Sajjad. All rights reserved. 
 
 This repository and its contents are private property. Unauthorized copying, distribution, modification, or commercial use of this codebase, via any medium, is strictly prohibited without explicit permission.
